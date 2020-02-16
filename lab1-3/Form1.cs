@@ -24,6 +24,10 @@ namespace lab1_3
         {
 
         }
+        private void num1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
         private void exitButton_Click(object sender, EventArgs e)
         {
             Form form = Form.ActiveForm;

@@ -85,72 +85,92 @@
             // num6
             // 
             this.num6.Location = new System.Drawing.Point(3, 54);
+            this.num6.MaxLength = 4;
             this.num6.Name = "num6";
             this.num6.Size = new System.Drawing.Size(64, 20);
             this.num6.TabIndex = 9;
+            this.num6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
             // 
             // num8
             // 
             this.num8.Location = new System.Drawing.Point(151, 54);
+            this.num8.MaxLength = 4;
             this.num8.Name = "num8";
             this.num8.Size = new System.Drawing.Size(65, 20);
             this.num8.TabIndex = 8;
+            this.num8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
             // 
             // num7
             // 
             this.num7.Location = new System.Drawing.Point(77, 54);
+            this.num7.MaxLength = 4;
             this.num7.Name = "num7";
             this.num7.Size = new System.Drawing.Size(66, 20);
             this.num7.TabIndex = 7;
+            this.num7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
             // 
             // num10
             // 
             this.num10.Location = new System.Drawing.Point(294, 54);
+            this.num10.MaxLength = 4;
             this.num10.Name = "num10";
             this.num10.Size = new System.Drawing.Size(66, 20);
             this.num10.TabIndex = 6;
+            this.num10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
             // 
             // num9
             // 
             this.num9.Location = new System.Drawing.Point(222, 54);
+            this.num9.MaxLength = 4;
             this.num9.Name = "num9";
             this.num9.Size = new System.Drawing.Size(66, 20);
             this.num9.TabIndex = 4;
+            this.num9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
             // 
             // num4
             // 
             this.num4.Location = new System.Drawing.Point(222, 23);
+            this.num4.MaxLength = 4;
             this.num4.Name = "num4";
             this.num4.Size = new System.Drawing.Size(66, 20);
             this.num4.TabIndex = 3;
+            this.num4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
             // 
             // num3
             // 
             this.num3.Location = new System.Drawing.Point(151, 23);
+            this.num3.MaxLength = 4;
             this.num3.Name = "num3";
             this.num3.Size = new System.Drawing.Size(65, 20);
             this.num3.TabIndex = 2;
+            this.num3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
             // 
             // num2
             // 
             this.num2.Location = new System.Drawing.Point(77, 23);
+            this.num2.MaxLength = 4;
             this.num2.Name = "num2";
             this.num2.Size = new System.Drawing.Size(64, 20);
             this.num2.TabIndex = 1;
+            this.num2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
             // 
             // num1
             // 
             this.num1.Location = new System.Drawing.Point(3, 23);
+            this.num1.MaxLength = 4;
             this.num1.Name = "num1";
             this.num1.Size = new System.Drawing.Size(66, 20);
             this.num1.TabIndex = 0;
+            this.num1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
             // 
             // num5
             // 
             this.num5.Location = new System.Drawing.Point(294, 23);
+            this.num5.MaxLength = 4;
             this.num5.Name = "num5";
             this.num5.Size = new System.Drawing.Size(66, 20);
             this.num5.TabIndex = 5;
+            this.num5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
             // 
             // label1
             // 
