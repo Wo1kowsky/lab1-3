@@ -81,7 +81,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 127F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(375, 267);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // num6
             // 
@@ -131,7 +130,6 @@
             this.num3.Name = "num3";
             this.num3.Size = new System.Drawing.Size(65, 20);
             this.num3.TabIndex = 2;
-            this.num3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // num2
             // 
@@ -163,7 +161,6 @@
             this.label1.Size = new System.Drawing.Size(299, 13);
             this.label1.TabIndex = 10;
             this.label1.Text = "Введите 10 положительных четырехзначных целых чисел";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // result
             // 
@@ -181,7 +178,6 @@
             this.label2.Size = new System.Drawing.Size(283, 26);
             this.label2.TabIndex = 11;
             this.label2.Text = "Количество чисел с суммой цифр кратной 7 и цифры - арифметическая прогрессия";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // execButton
             // 
