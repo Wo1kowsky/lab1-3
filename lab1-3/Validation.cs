@@ -4,7 +4,7 @@ static public class Validation
 {
     static public bool IsLengthValid(string input)
     {
-        return input.Length == 4; ;
+        return input.Length == 4;
     }
 
     static public bool IsPositiveInteger(string input)

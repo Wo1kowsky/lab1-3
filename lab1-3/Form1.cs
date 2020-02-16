@@ -24,7 +24,7 @@ namespace lab1_3
         {
             foreach (TextBox textBox in groupBox1.Controls.OfType<TextBox>())
             {
-                if (!Validation.IsLengthValid(textBox.Text) && !Validation.IsPositiveInteger(textBox.Text))
+                if (!Validation.IsLengthValid(textBox.Text) || !Validation.IsPositiveInteger(textBox.Text))
                 {
                     MessageBox.Show("Invalid input");
                     break;
