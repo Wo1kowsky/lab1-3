@@ -16,20 +16,34 @@ namespace lab1_3
 
         static private bool AverageLessThan(string number)
         {
-            var average = number
-                .Select((c) => int.Parse(c.ToString()))
-                .Average();
+            if (number.Length > 0)
+            {
+                var average = number
+                    .Select((c) => int.Parse(c.ToString()))
+                    .Average();
 
-            return average < 7;
+                return average < 7;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         static private bool IsMaxDigit7(string number)
         {
-            var max = number
-                .Select((c) => int.Parse(c.ToString()))
-                .Max();
+            if (number.Length > 0)
+            {
+                var max = number
+                    .Select((c) => int.Parse(c.ToString()))
+                    .Max();
 
-            return max == 7;
+                return max == 7;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
