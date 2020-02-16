@@ -195,9 +195,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.label2, 4);
             this.label2.Location = new System.Drawing.Point(3, 79);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(283, 26);
+            this.label2.Size = new System.Drawing.Size(284, 26);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Количество чисел с суммой цифр кратной 7 и цифры - арифметическая прогрессия";
+            this.label2.Text = "Количество чисел, сумма цифр которых кратна 7 и их среднее арифметическое меньше " +
+    "7";
             // 
             // execButton
             // 
