@@ -22,7 +22,14 @@ namespace lab1_3
         }
         private void execButton_Click(object sender, EventArgs e)
         {
-            //if Validation.IsLengthValid
+            foreach (TextBox textBox in groupBox1.Controls.OfType<TextBox>())
+            {
+                if (!Validation.IsLengthValid(textBox.Text) && !Validation.IsPositiveInteger(textBox.Text))
+                {
+                    MessageBox.Show("Invalid input");
+                    break;
+                }
+            }
         }
         private void num1_KeyPress(object sender, KeyPressEventArgs e)
         {
