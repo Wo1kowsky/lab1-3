@@ -8,7 +8,9 @@ static public class Validation
     }
     static private bool IsLengthValid(string input)
     {
-        return input.Length == 4;
+        //return input.Length == 4;
+        int number;
+        return Int32.TryParse(input, out number) && number > 999;
     }
 
     static private bool IsPositiveInteger(string input)

@@ -22,14 +22,25 @@ namespace lab1_3
         }
         private void execButton_Click(object sender, EventArgs e)
         {
+            bool isValid = true;
+            List<String> numbers = new List<string>();
             foreach (TextBox textBox in groupBox1.Controls.OfType<TextBox>())
             {
-                if (!Validation.isInputValid(textBox.Text))
+                if (Validation.isInputValid(textBox.Text))
+                {
+                    numbers.Add(textBox.Text);
+                }
+                else
                 {
                     MessageBox.Show("Invalid input");
+                    isValid = false;
                     break;
                 }
             }
+            if (isValid)
+                result.Text = Logic.FilterNumbers(numbers).Count.ToString();
+            else
+                result.Text = "0";
         }
         private void num1_KeyPress(object sender, KeyPressEventArgs e)
         {
