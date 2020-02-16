@@ -15,6 +15,7 @@ namespace lab1_3.Tests
             Assert.AreEqual(Validation.isInputValid("1111"), true);
             Assert.AreEqual(Validation.isInputValid("-1111"), false);
             Assert.AreEqual(Validation.isInputValid("0000"), false);
+            Assert.AreEqual(Validation.isInputValid("aaaa"), false);
         }
     }
 }
