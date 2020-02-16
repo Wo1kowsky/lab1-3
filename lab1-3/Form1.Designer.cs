@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.num1 = new System.Windows.Forms.TextBox();
-            this.num3 = new System.Windows.Forms.TextBox();
-            this.num4 = new System.Windows.Forms.TextBox();
-            this.num9 = new System.Windows.Forms.TextBox();
-            this.num5 = new System.Windows.Forms.TextBox();
-            this.num10 = new System.Windows.Forms.TextBox();
-            this.num7 = new System.Windows.Forms.TextBox();
-            this.num8 = new System.Windows.Forms.TextBox();
             this.num6 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.num8 = new System.Windows.Forms.TextBox();
+            this.num7 = new System.Windows.Forms.TextBox();
+            this.num10 = new System.Windows.Forms.TextBox();
+            this.num9 = new System.Windows.Forms.TextBox();
+            this.num4 = new System.Windows.Forms.TextBox();
+            this.num3 = new System.Windows.Forms.TextBox();
             this.num2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.num1 = new System.Windows.Forms.TextBox();
+            this.num5 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.result = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.execButton = new System.Windows.Forms.Button();
-            this.exit_button = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,7 +69,7 @@
             this.tableLayoutPanel1.Controls.Add(this.result, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.execButton, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.exit_button, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.exitButton, 2, 5);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
@@ -83,12 +83,47 @@
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // num1
+            // num6
             // 
-            this.num1.Location = new System.Drawing.Point(3, 23);
-            this.num1.Name = "num1";
-            this.num1.Size = new System.Drawing.Size(66, 20);
-            this.num1.TabIndex = 0;
+            this.num6.Location = new System.Drawing.Point(3, 54);
+            this.num6.Name = "num6";
+            this.num6.Size = new System.Drawing.Size(64, 20);
+            this.num6.TabIndex = 9;
+            // 
+            // num8
+            // 
+            this.num8.Location = new System.Drawing.Point(151, 54);
+            this.num8.Name = "num8";
+            this.num8.Size = new System.Drawing.Size(65, 20);
+            this.num8.TabIndex = 8;
+            // 
+            // num7
+            // 
+            this.num7.Location = new System.Drawing.Point(77, 54);
+            this.num7.Name = "num7";
+            this.num7.Size = new System.Drawing.Size(66, 20);
+            this.num7.TabIndex = 7;
+            // 
+            // num10
+            // 
+            this.num10.Location = new System.Drawing.Point(294, 54);
+            this.num10.Name = "num10";
+            this.num10.Size = new System.Drawing.Size(66, 20);
+            this.num10.TabIndex = 6;
+            // 
+            // num9
+            // 
+            this.num9.Location = new System.Drawing.Point(222, 54);
+            this.num9.Name = "num9";
+            this.num9.Size = new System.Drawing.Size(66, 20);
+            this.num9.TabIndex = 4;
+            // 
+            // num4
+            // 
+            this.num4.Location = new System.Drawing.Point(222, 23);
+            this.num4.Name = "num4";
+            this.num4.Size = new System.Drawing.Size(66, 20);
+            this.num4.TabIndex = 3;
             // 
             // num3
             // 
@@ -98,19 +133,19 @@
             this.num3.TabIndex = 2;
             this.num3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // num4
+            // num2
             // 
-            this.num4.Location = new System.Drawing.Point(222, 23);
-            this.num4.Name = "num4";
-            this.num4.Size = new System.Drawing.Size(66, 20);
-            this.num4.TabIndex = 3;
+            this.num2.Location = new System.Drawing.Point(77, 23);
+            this.num2.Name = "num2";
+            this.num2.Size = new System.Drawing.Size(64, 20);
+            this.num2.TabIndex = 1;
             // 
-            // num9
+            // num1
             // 
-            this.num9.Location = new System.Drawing.Point(222, 54);
-            this.num9.Name = "num9";
-            this.num9.Size = new System.Drawing.Size(66, 20);
-            this.num9.TabIndex = 4;
+            this.num1.Location = new System.Drawing.Point(3, 23);
+            this.num1.Name = "num1";
+            this.num1.Size = new System.Drawing.Size(66, 20);
+            this.num1.TabIndex = 0;
             // 
             // num5
             // 
@@ -118,34 +153,6 @@
             this.num5.Name = "num5";
             this.num5.Size = new System.Drawing.Size(66, 20);
             this.num5.TabIndex = 5;
-            // 
-            // num10
-            // 
-            this.num10.Location = new System.Drawing.Point(294, 54);
-            this.num10.Name = "num10";
-            this.num10.Size = new System.Drawing.Size(66, 20);
-            this.num10.TabIndex = 6;
-            // 
-            // num7
-            // 
-            this.num7.Location = new System.Drawing.Point(77, 54);
-            this.num7.Name = "num7";
-            this.num7.Size = new System.Drawing.Size(66, 20);
-            this.num7.TabIndex = 7;
-            // 
-            // num8
-            // 
-            this.num8.Location = new System.Drawing.Point(151, 54);
-            this.num8.Name = "num8";
-            this.num8.Size = new System.Drawing.Size(65, 20);
-            this.num8.TabIndex = 8;
-            // 
-            // num6
-            // 
-            this.num6.Location = new System.Drawing.Point(3, 54);
-            this.num6.Name = "num6";
-            this.num6.Size = new System.Drawing.Size(64, 20);
-            this.num6.TabIndex = 9;
             // 
             // label1
             // 
@@ -158,12 +165,12 @@
             this.label1.Text = "Введите 10 положительных четырехзначных целых чисел";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // num2
+            // result
             // 
-            this.num2.Location = new System.Drawing.Point(77, 23);
-            this.num2.Name = "num2";
-            this.num2.Size = new System.Drawing.Size(64, 20);
-            this.num2.TabIndex = 1;
+            this.result.Location = new System.Drawing.Point(3, 114);
+            this.result.Name = "result";
+            this.result.Size = new System.Drawing.Size(64, 20);
+            this.result.TabIndex = 12;
             // 
             // label2
             // 
@@ -176,13 +183,6 @@
             this.label2.Text = "Количество чисел с суммой цифр кратной 7 и цифры - арифметическая прогрессия";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // result
-            // 
-            this.result.Location = new System.Drawing.Point(3, 114);
-            this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(64, 20);
-            this.result.TabIndex = 12;
-            // 
             // execButton
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.execButton, 2);
@@ -193,14 +193,15 @@
             this.execButton.Text = "Выполнить";
             this.execButton.UseVisualStyleBackColor = true;
             // 
-            // exit_button
+            // exitButton
             // 
-            this.exit_button.Location = new System.Drawing.Point(151, 142);
-            this.exit_button.Name = "exit_button";
-            this.exit_button.Size = new System.Drawing.Size(65, 23);
-            this.exit_button.TabIndex = 14;
-            this.exit_button.Text = "Выход";
-            this.exit_button.UseVisualStyleBackColor = true;
+            this.exitButton.Location = new System.Drawing.Point(151, 142);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(65, 23);
+            this.exitButton.TabIndex = 14;
+            this.exitButton.Text = "Выход";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // Form1
             // 
@@ -234,7 +235,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox result;
         private System.Windows.Forms.Button execButton;
-        private System.Windows.Forms.Button exit_button;
+        private System.Windows.Forms.Button exitButton;
     }
 }
 
