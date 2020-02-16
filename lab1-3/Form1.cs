@@ -22,7 +22,7 @@ namespace lab1_3
         }
         private void execButton_Click(object sender, EventArgs e)
         {
-
+            //if Validation.IsLengthValid
         }
         private void num1_KeyPress(object sender, KeyPressEventArgs e)
         {
