@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace lab1_3
@@ -38,9 +33,18 @@ namespace lab1_3
                 }
             }
             if (isValid)
-                result.Text = Logic.FilterNumbers(numbers).Count.ToString();
+            {
+                var count = Logic.FilterNumbers(numbers).Count;
+                result.Text = count.ToString();
+                if (count == 0)
+                {
+                    MessageBox.Show("Числа, удовлетворяющие критериям, отсутствуют");
+                }
+            }
             else
+            {
                 result.Text = "0";
+            }
         }
         private void num1_KeyPress(object sender, KeyPressEventArgs e)
         {
