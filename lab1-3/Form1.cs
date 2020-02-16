@@ -22,7 +22,7 @@ namespace lab1_3
         }
         private void execButton_Click(object sender, EventArgs e)
         {
-
+            //if Validation.IsLengthValid
         }
         private void num1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -32,6 +32,21 @@ namespace lab1_3
         {
             Form form = Form.ActiveForm;
             form.Close();
+        }
+
+        private void num1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void num7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
