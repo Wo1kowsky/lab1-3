@@ -1,6 +1,4 @@
-﻿using System;
-
-static public class Validation
+﻿static public class Validation
 {
     static public bool isInputValid(string input)
     {
@@ -9,13 +7,11 @@ static public class Validation
     static private bool IsLengthValid(string input)
     {
         //return input.Length == 4;
-        int number;
-        return Int32.TryParse(input, out number) && number > 999;
+        return int.TryParse(input, out int number) && number > 999;
     }
 
     static private bool IsPositiveInteger(string input)
     {
-        int number;
-        return Int32.TryParse(input, out number) && number > 0;
+        return int.TryParse(input, out int number) && number > 0;
     }
 }

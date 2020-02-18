@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.num6 = new System.Windows.Forms.TextBox();
-            this.num8 = new System.Windows.Forms.TextBox();
-            this.num7 = new System.Windows.Forms.TextBox();
-            this.num10 = new System.Windows.Forms.TextBox();
-            this.num9 = new System.Windows.Forms.TextBox();
-            this.num4 = new System.Windows.Forms.TextBox();
-            this.num3 = new System.Windows.Forms.TextBox();
-            this.num2 = new System.Windows.Forms.TextBox();
-            this.num1 = new System.Windows.Forms.TextBox();
-            this.num5 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.num8 = new System.Windows.Forms.TextBox();
+            this.num6 = new System.Windows.Forms.TextBox();
+            this.num7 = new System.Windows.Forms.TextBox();
+            this.num1 = new System.Windows.Forms.TextBox();
+            this.num2 = new System.Windows.Forms.TextBox();
+            this.num3 = new System.Windows.Forms.TextBox();
+            this.num9 = new System.Windows.Forms.TextBox();
+            this.num10 = new System.Windows.Forms.TextBox();
+            this.num4 = new System.Windows.Forms.TextBox();
+            this.num5 = new System.Windows.Forms.TextBox();
             this.result = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.execButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -56,7 +56,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 72F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 85F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.result, 0, 3);
@@ -74,14 +74,35 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(366, 267);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // num6
+            // label1
             // 
-            this.num6.Location = new System.Drawing.Point(142, 45);
-            this.num6.MaxLength = 4;
-            this.num6.Name = "num6";
-            this.num6.Size = new System.Drawing.Size(65, 20);
-            this.num6.TabIndex = 9;
-            this.num6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
+            this.label1.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label1, 5);
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(299, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Введите 10 положительных четырехзначных целых чисел";
+            // 
+            // groupBox1
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.groupBox1, 5);
+            this.groupBox1.Controls.Add(this.num8);
+            this.groupBox1.Controls.Add(this.num6);
+            this.groupBox1.Controls.Add(this.num7);
+            this.groupBox1.Controls.Add(this.num1);
+            this.groupBox1.Controls.Add(this.num2);
+            this.groupBox1.Controls.Add(this.num3);
+            this.groupBox1.Controls.Add(this.num9);
+            this.groupBox1.Controls.Add(this.num10);
+            this.groupBox1.Controls.Add(this.num4);
+            this.groupBox1.Controls.Add(this.num5);
+            this.groupBox1.Location = new System.Drawing.Point(3, 23);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(360, 76);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // num8
             // 
@@ -91,6 +112,15 @@
             this.num8.Size = new System.Drawing.Size(66, 20);
             this.num8.TabIndex = 8;
             this.num8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
+            // 
+            // num6
+            // 
+            this.num6.Location = new System.Drawing.Point(142, 45);
+            this.num6.MaxLength = 4;
+            this.num6.Name = "num6";
+            this.num6.Size = new System.Drawing.Size(65, 20);
+            this.num6.TabIndex = 9;
+            this.num6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
             // 
             // num7
             // 
@@ -102,51 +132,6 @@
             this.num7.TextChanged += new System.EventHandler(this.num7_TextChanged);
             this.num7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
             // 
-            // num10
-            // 
-            this.num10.Location = new System.Drawing.Point(0, 45);
-            this.num10.MaxLength = 4;
-            this.num10.Name = "num10";
-            this.num10.Size = new System.Drawing.Size(66, 20);
-            this.num10.TabIndex = 6;
-            this.num10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
-            // 
-            // num9
-            // 
-            this.num9.Location = new System.Drawing.Point(72, 45);
-            this.num9.MaxLength = 4;
-            this.num9.Name = "num9";
-            this.num9.Size = new System.Drawing.Size(64, 20);
-            this.num9.TabIndex = 4;
-            this.num9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
-            // 
-            // num4
-            // 
-            this.num4.Location = new System.Drawing.Point(213, 19);
-            this.num4.MaxLength = 4;
-            this.num4.Name = "num4";
-            this.num4.Size = new System.Drawing.Size(66, 20);
-            this.num4.TabIndex = 3;
-            this.num4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
-            // 
-            // num3
-            // 
-            this.num3.Location = new System.Drawing.Point(142, 19);
-            this.num3.MaxLength = 4;
-            this.num3.Name = "num3";
-            this.num3.Size = new System.Drawing.Size(65, 20);
-            this.num3.TabIndex = 2;
-            this.num3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
-            // 
-            // num2
-            // 
-            this.num2.Location = new System.Drawing.Point(72, 19);
-            this.num2.MaxLength = 4;
-            this.num2.Name = "num2";
-            this.num2.Size = new System.Drawing.Size(64, 20);
-            this.num2.TabIndex = 1;
-            this.num2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
-            // 
             // num1
             // 
             this.num1.Location = new System.Drawing.Point(0, 19);
@@ -157,6 +142,51 @@
             this.num1.TextChanged += new System.EventHandler(this.num1_TextChanged);
             this.num1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
             // 
+            // num2
+            // 
+            this.num2.Location = new System.Drawing.Point(72, 19);
+            this.num2.MaxLength = 4;
+            this.num2.Name = "num2";
+            this.num2.Size = new System.Drawing.Size(64, 20);
+            this.num2.TabIndex = 1;
+            this.num2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
+            // 
+            // num3
+            // 
+            this.num3.Location = new System.Drawing.Point(142, 19);
+            this.num3.MaxLength = 4;
+            this.num3.Name = "num3";
+            this.num3.Size = new System.Drawing.Size(65, 20);
+            this.num3.TabIndex = 2;
+            this.num3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
+            // 
+            // num9
+            // 
+            this.num9.Location = new System.Drawing.Point(72, 45);
+            this.num9.MaxLength = 4;
+            this.num9.Name = "num9";
+            this.num9.Size = new System.Drawing.Size(64, 20);
+            this.num9.TabIndex = 4;
+            this.num9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
+            // 
+            // num10
+            // 
+            this.num10.Location = new System.Drawing.Point(0, 45);
+            this.num10.MaxLength = 4;
+            this.num10.Name = "num10";
+            this.num10.Size = new System.Drawing.Size(66, 20);
+            this.num10.TabIndex = 6;
+            this.num10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
+            // 
+            // num4
+            // 
+            this.num4.Location = new System.Drawing.Point(213, 19);
+            this.num4.MaxLength = 4;
+            this.num4.Name = "num4";
+            this.num4.Size = new System.Drawing.Size(66, 20);
+            this.num4.TabIndex = 3;
+            this.num4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
+            // 
             // num5
             // 
             this.num5.Location = new System.Drawing.Point(285, 19);
@@ -165,16 +195,6 @@
             this.num5.Size = new System.Drawing.Size(66, 20);
             this.num5.TabIndex = 5;
             this.num5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label1, 5);
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(299, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Введите 10 положительных четырехзначных целых чисел";
             // 
             // result
             // 
@@ -215,34 +235,14 @@
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
-            // groupBox1
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.groupBox1, 5);
-            this.groupBox1.Controls.Add(this.num8);
-            this.groupBox1.Controls.Add(this.num6);
-            this.groupBox1.Controls.Add(this.num7);
-            this.groupBox1.Controls.Add(this.num1);
-            this.groupBox1.Controls.Add(this.num2);
-            this.groupBox1.Controls.Add(this.num3);
-            this.groupBox1.Controls.Add(this.num9);
-            this.groupBox1.Controls.Add(this.num10);
-            this.groupBox1.Controls.Add(this.num4);
-            this.groupBox1.Controls.Add(this.num5);
-            this.groupBox1.Location = new System.Drawing.Point(3, 23);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(360, 76);
-            this.groupBox1.TabIndex = 15;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 308);
+            this.ClientSize = new System.Drawing.Size(371, 221);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Лабораторная работа №1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
