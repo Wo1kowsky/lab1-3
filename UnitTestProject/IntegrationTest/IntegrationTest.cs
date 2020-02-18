@@ -16,7 +16,7 @@ namespace UnitTestProject.IntegrationTest
                 Validation.isInputValid), 
                 true);
             CollectionAssert.AreEqual(
-                list,
+                Logic.FilterNumbers(list),
                 new List<string> { "7776", "1237" }
             );
         }
