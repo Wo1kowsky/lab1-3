@@ -17,5 +17,12 @@ namespace UnitTestProject.IntegrationTest
                 new List<string> { "7776", "1237" }
             );
         }
+
+        [TestMethod]
+        public void CheckFilterNumbersValidation()
+        {
+            List<string> list = new List<string>() { "888", "7777", "7776", "1234", "1237" };
+            Assert.AreEqual(list.TrueForAll(Validation.isInputValid), false);
+        }
     }
 }
