@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
-using System.Windows.Input;
-using System.Windows.Forms;
-using System.Drawing;
-using Microsoft.VisualStudio.TestTools.UITesting;
+﻿using Microsoft.VisualStudio.TestTools.UITesting;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Microsoft.VisualStudio.TestTools.UITest.Extension;
-using Keyboard = Microsoft.VisualStudio.TestTools.UITesting.Keyboard;
 
 
 namespace CodedUITestProject
@@ -26,9 +18,9 @@ namespace CodedUITestProject
         public void CodedUITestMethod1()
         {
             // Чтобы создать код для этого теста, выберите в контекстном меню команду "Формирование кода для кодированного теста пользовательского интерфейса", а затем выберите один из пунктов меню.
-            this.UIMap.ExecMethod();
-            this.UIMap.AssertMethod();
-            this.UIMap.ExitingMethod();
+            UIMap.ExecMethod();
+            UIMap.AssertMethod();
+            UIMap.ExitingMethod();
         }
 
         #region Дополнительные атрибуты тестирования
@@ -55,29 +47,18 @@ namespace CodedUITestProject
         ///Получает или устанавливает контекст теста, в котором предоставляются
         ///сведения о текущем тестовом запуске и обеспечивается его функциональность.
         ///</summary>
-        public TestContext TestContext
-        {
-            get
-            {
-                return testContextInstance;
-            }
-            set
-            {
-                testContextInstance = value;
-            }
-        }
-        private TestContext testContextInstance;
+        public TestContext TestContext { get; set; }
 
         public UIMap UIMap
         {
             get
             {
-                if (this.map == null)
+                if (map == null)
                 {
-                    this.map = new UIMap();
+                    map = new UIMap();
                 }
 
-                return this.map;
+                return map;
             }
         }
 
